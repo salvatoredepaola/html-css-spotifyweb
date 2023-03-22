@@ -1,0 +1,218 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 9px;
+}
+/************************************************
+    UTILITIES
+ ************************************************/
+ .flex{
+    display: flex;
+}
+/* ALIGN ITEMS */
+
+.alignItemCenter {align-items: center;}
+
+/* PADDING */
+.pad2Rem {padding: 1rem 2rem;}
+.pad{padding: 10px 50px;}
+.lastButton{padding: 1.5em 5rem;}
+
+
+.padY1Rem{padding: 1rem 0;}
+.padY2Rem{padding: 2rem 0;}
+.padY3Rem{padding: 3rem 0;}
+.padY5Rem{padding: 5rem 0 ;}
+
+.pad20{padding: 20px;}
+.pad2Rem{padding: 2rem;}
+.pad3Rem{padding: 3rem;}
+.pad5Rem{padding: 5rem;}
+
+
+.padX1Rem{padding: 0 1rem;}
+.padX2Rem{padding: 0 2rem;}
+.padX3Rem{padding: 0 3rem;}
+.padX20 {padding: 0 20px;}
+.padX1Rem{padding: 0 1rem;}
+.padXMidRem{padding: 0.5rem;}
+
+.padT2Rem{padding-top: 2rem;}
+
+.padB1rem{padding-bottom: 1rem;}
+.padB2Rem{padding-bottom: 2rem;}
+
+.marginY1Rem{margin: 1rem 0;}
+.marginAuto{margin-top: auto;}
+.marginBottom50{margin-bottom: 50px;}
+.marginTop2Rem{margin-top: 2rem;}
+
+/* WIDTH */
+.col20 {width: 20%;}
+.col40 {width: 40%;}
+.col50 {width: 50%;}
+.col60 {width: 60%;}
+.col70 {max-width: 70%;}
+.col80 {width: 80%;}
+.col100{width: 100%;}
+
+/* TESTO */
+
+.text400{font-weight: 600;}
+
+.text2Rem{font-size: 2em;}
+.text3Rem{font-size: 3em;}
+
+.textWhite{color: white;}
+
+/* SFONDI */
+
+.bgBlue {background-color: #0084fd;}
+.bgWhite {background-color: white;}
+.bgBlack {background-color: #333333;}
+.bgViolet {background-color: #9792e4;}
+.bgLightBlue {background-color: #b5ddff;}
+.bgGrey{background-color: gray;}
+
+ /************************************************
+    BODY
+ ************************************************/
+ 
+ /* LOGO */
+
+ #logo{
+    color: white;
+}
+/* PRINCIPALE */
+
+.principale{
+    margin-bottom: 98x;
+    min-height: calc(100vh - 90px);
+
+}
+ 
+ /* NAV */
+.navbar{
+    color: gray;
+    background-color: black;
+    width: 230px;
+    flex-direction: column;
+}
+li{
+    padding: 1rem 20px;
+    list-style-type: none; 
+    text-decoration: none;
+    color: grey;
+}
+a{
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3{color: white;}
+
+/* SONGS */
+
+.songs{
+    overflow-y: scroll;
+    background-color: #333333;
+}
+/* FOOTER */
+
+.footer{
+    background-color: #9792e4;
+    width: 100vw;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+/************************************************
+    MEDIA
+ ************************************************/
+
+@media screen and (max-width: 552px){
+
+    .navbar{
+        width: 50px;
+    }
+
+    .bottom{
+        margin-top: auto;
+    }
+
+    .text2Rem{
+        font-size: 1rem;
+    }
+    .text3Rem{
+        font-size: 100%;
+    }
+
+    h1,
+    .bgGrey,
+    span,
+    .playlist{
+        display: none;
+    }
+    .fa-solid .fa-circle-user{
+        padding-top: 1rem;
+    }
+    .fa-brands{
+        font-size: 2rem;
+        padding: 20px 10px;
+    }
+    .fa-bars,
+    .fa-magnifying-glass,
+    .fa-house{
+        padding: 5px 1rem;
+        
+    }
+    #logo{
+        padding: 0;
+    }
+    li{
+        padding: 0
+    }
+
+}
+
+@media screen and (min-width:553px) and (max-width: 767px){
+
+
+    .fa-solid .fa-circle-user{
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width: 992px){
+
+
+    .fa-solid .fa-circle-user{
+        padding-top: 1rem;
+    }
+
+}
+
+
+@media screen and (min-width: 993px){
+
+}
