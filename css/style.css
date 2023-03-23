@@ -119,6 +119,7 @@ h5{
 .textCenter{text-align: center;}
 
 .text30{font-size: 30px;}
+.text50{font-size: 50px;}
 .text400{font-weight: 600;}
 
 .text2Rem{font-size: 2em;}
@@ -166,12 +167,21 @@ li{
     text-decoration: none;
     color: grey;
 }
+.pad20.flex.alignItemCenter:hover{
+    border-left: 3px solid #adff2f;
+}
+li:hover{
+    border-left: 3px solid #adff2f;
+}
 a{
     color: grey;
     text-decoration: none;
     cursor: pointer;
 }
-
+a:hover{
+    color: white;
+    
+}
 .download{
     padding: 0 10px;
 }
@@ -204,6 +214,10 @@ a{
     border: 1px solid white;
     padding: 1rem 0;
 }
+.upgrade:hover{
+    cursor: pointer;
+    font-size: 15px;
+}
 .buttonFix{
     padding: 0 3em;
     color:white
@@ -216,8 +230,27 @@ a{
 .album img{
     width: 100%;
 }
+
 .gap{
     gap: 10px;
+}
+
+.hover{
+    position: relative;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position:absolute; 
+    top:0; 
+    left:0; 
+    opacity:0;
+}
+
+.hover:hover .text{
+    opacity: 1;
+    cursor: pointer;
 }
 /* FOOTER */
 
