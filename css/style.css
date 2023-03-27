@@ -296,6 +296,7 @@ footer img{
     margin: 1rem 0;
 }
 .timego{
+    position: relative;
     width: 10%;
     height: 4px;
     background-color: #c1c1c1;
@@ -305,6 +306,18 @@ footer img{
 .timego:hover{
     background-color: #adff2f;
     cursor: pointer;
+}
+.dot{
+    display: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #c1c1c1;
+    border-radius: 50%;
+    right: 0;
+}
+.timego:hover .dot{
+    display: block;
 }
 
 
