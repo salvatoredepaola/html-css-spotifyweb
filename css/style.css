@@ -67,7 +67,7 @@ h5{
 .pad{padding: 10px 50px;}
 .lastButton{padding: 1.5em 5rem;}
 
-
+.padY5px{padding: 5px 0;}
 .padY1Rem{padding: 1rem 0;}
 .padY2Rem{padding: 2rem 0;}
 .padY3Rem{padding: 3rem 0;}
@@ -80,6 +80,7 @@ h5{
 .pad5Rem{padding: 5rem;}
 
 .pad1Em{padding: 1em;}
+.padX1Em{padding: 0 1em;}
 .padXMidRem{padding: 0.5rem;}
 .padX1Rem{padding: 0 1rem;}
 .padX2Rem{padding: 0 2rem;}
@@ -113,6 +114,10 @@ h5{
 .col100{width: 100%;}
 
 .w100{width: 100px;}
+
+/* HEIGHT */
+
+.h30{height: 30px;}
 
 /* TESTO */
 
@@ -151,6 +156,7 @@ main{
     height: calc(100vh - 90px);
 }
 .principale{
+    overflow: hidden;
     height: 100%;
 }
  
@@ -196,7 +202,7 @@ a:hover{
     background-color: #00000050 ;
     position: fixed;
     top: 0;
-    z-index: 9999;
+    z-index: 2;
 }
 .content{
     width: 100%;
@@ -207,6 +213,17 @@ a:hover{
     height:100%;
     overflow-y: auto;
     background-color: #141922;
+}
+
+.parola:hover .green{
+    display: block;
+}
+.green{
+    display: none;
+    width: 30px;
+    height: 1px;
+    background-color: #adff2f;
+    margin: 0 auto;
 }
 
 .upgrade{
@@ -256,6 +273,7 @@ a:hover{
 /* FOOTER */
 
 .footer{
+    z-index: 22;
     background-color: #282828;
     width: 100vw;
     height: 90px;
@@ -277,6 +295,18 @@ footer img{
     border-radius: 2px;
     margin: 1rem 0;
 }
+.timego{
+    width: 10%;
+    height: 4px;
+    background-color: #c1c1c1;
+    border-radius: 2px;
+    margin: 1rem 0;
+}
+.timego:hover{
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
 
 .volume{
     width: 85px;
@@ -284,6 +314,7 @@ footer img{
     background-color: #5a5a5a;
     border-radius: 2px;
 }
+
 
 
 
